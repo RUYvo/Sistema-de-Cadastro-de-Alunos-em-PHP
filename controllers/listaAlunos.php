@@ -1,12 +1,9 @@
 <?php
 
-require_once "../Atividade/models/aluno.php";
+require_once "../Sistema-de-Cadastro-de-Alunos-em-PHP/models/aluno.php";
 class ListaAlunos{
     public $listaAlunos = [];
     public function __construct(){
-        $this->listaAlunos[] = new Aluno('Luiz','45','Engenharia De Software');
-        $this->listaAlunos[] = new Aluno('Ives','24','Engenharia Elétrica');
-        
         if(!isset($_SESSION['alunos'])){
             $_SESSION['alunos'] = [];
         }

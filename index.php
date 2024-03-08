@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "../Atividade/controllers/cadastrarAlunos.php";
+require_once "../Sistema-de-Cadastro-de-Alunos-em-PHP/controllers/cadastrarAlunos.php";
 
 $cadastroAlunos = new CadastrarAlunos();
 
@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="#" class="navbar-brand">
         Software - Cadastrar Aluno
     </a>
+    <a type="submit" class="btn btn-primary" href="./login.php">Logout</a>
 </nav>
 <div class="container">
     <div class="row">
