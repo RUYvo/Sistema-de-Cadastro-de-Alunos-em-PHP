@@ -21,8 +21,7 @@ foreach ($usuarios as $currentUser) {
         $_SERVER['usuario'] = $_POST['email'];
         header('Location: index.php');
         exit;
-    } else {
-        header('Location: login.php');
-        $erroLogin = 'Credenciais erradas. Por favor, tente novamente.';
     }
+    $erroLogin = 'Credenciais erradas. Por favor, tente novamente.';
 }
+header('Location: login.php');
